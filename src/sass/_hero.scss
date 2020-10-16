@@ -61,6 +61,12 @@
   background-repeat: no-repeat;
   background-size: 171px, 346px;
   background-position: right 32px bottom 0, right -62px bottom 75px;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/hero/mobile/ice-cream@2x.png'),
+      url('../images/hero/Pink-Ellipse.svg');
+  }
 
   @include for-size(tablet) {
     max-width: 1090px;
@@ -77,6 +83,15 @@
     background-size: 143px, 168px, 324px, 124px;
     background-position: right 248px bottom 0, right 35px bottom 0,
       right 138px top 34px, left 33px bottom 25px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/tablet/ice-cream@2x.png'),
+        url('../images/hero/tablet/so-tasty@2x.png'),
+        url('../images/hero/Pink-Ellipse.svg'),
+        url('../images/hero/tablet/milk@2x.png');
+    }
   }
 
   @include for-size(desktop) {
@@ -91,6 +106,14 @@
     background-size: 236px, 293px, 538px, 188px;
     background-position: right 450px bottom 0, right 109px bottom 0,
       right 267px bottom 75px, left 77px bottom 25px;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/desktop/ice-cream@2x.png'),
+        url('../images/hero/desktop/so-tasty@2x.png'),
+        url('../images/hero/Pink-Ellipse.svg'),
+        url('../images/hero/desktop/milk@2x.png');
+    }
   }
 }
 
