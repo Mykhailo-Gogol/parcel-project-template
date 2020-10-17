@@ -7,7 +7,7 @@
     @media (min-width: $mobile) {
       @content;
     }
-  } @else if $range == tablet-only {
+  } @else if $range == mobile-only {
     @media (max-width: #{$tablet - 1}) {
       @content;
     }
@@ -25,19 +25,19 @@
 .hero-content-wrap {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
 }
 
 .hero__left-side {
   @include for-size(tablet) {
     margin-bottom: 66px;
-    padding-top: 8px;
+    margin-top: 8px;
   }
   @include for-size(desktop) {
     margin-bottom: 112px;
     padding-top: 15px;
   }
 }
+
 .hero {
   padding-top: 193px;
   padding-bottom: 169px;
@@ -61,9 +61,15 @@
   background-repeat: no-repeat;
   background-size: 171px, 346px;
   background-position: right 32px bottom 0, right -62px bottom 75px;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/hero/mobile/ice-cream@2x.png'),
+      url('../images/hero/Pink-Ellipse.svg');
+  }
 
   @include for-size(tablet) {
-    max-width: 1200px;
+    max-width: 1090px;
     height: 399px;
     padding-top: 95px;
     padding-bottom: 31px;
@@ -77,6 +83,15 @@
     background-size: 143px, 168px, 324px, 124px;
     background-position: right 248px bottom 0, right 35px bottom 0,
       right 138px top 34px, left 33px bottom 25px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/tablet/ice-cream@2x.png'),
+        url('../images/hero/tablet/so-tasty@2x.png'),
+        url('../images/hero/Pink-Ellipse.svg'),
+        url('../images/hero/tablet/milk@2x.png');
+    }
   }
 
   @include for-size(desktop) {
@@ -91,6 +106,14 @@
     background-size: 236px, 293px, 538px, 188px;
     background-position: right 450px bottom 0, right 109px bottom 0,
       right 267px bottom 75px, left 77px bottom 25px;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/desktop/ice-cream@2x.png'),
+        url('../images/hero/desktop/so-tasty@2x.png'),
+        url('../images/hero/Pink-Ellipse.svg'),
+        url('../images/hero/desktop/milk@2x.png');
+    }
   }
 }
 
@@ -121,6 +144,7 @@
 }
 
 .hero__title-text {
+  display: block;
   font-size: 48px;
   line-height: 96.5%;
   letter-spacing: 0.04em;
@@ -188,7 +212,7 @@
   }
 }
 .hero-description {
-  @include for-size(tablet-only) {
+  @include for-size(mobile-only) {
     display: none;
   }
   margin-left: 120px;
@@ -234,7 +258,7 @@
     background-color: #d41443;
   }
 
-  @include for-size(tablet-only) {
+  @include for-size(mobile-only) {
     display: none;
   }
   @include for-size(desktop) {
@@ -262,7 +286,7 @@
 }
 
 .hero-institution {
-  @include for-size(tablet-only) {
+  @include for-size(mobile-only) {
     display: none;
   }
 }

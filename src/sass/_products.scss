@@ -1,7 +1,7 @@
 @mixin for-size($range) {
   $mobile: 320px;
   $tablet: 768px;
-  $desktop: 1050px;
+  $desktop: 1090px;
 
   @if $range == mobile-only {
     @media (max-width: #{$mobile - 1}) {
@@ -53,7 +53,7 @@ body {
   }
 
   @include for-size(desktop) {
-    width: 1050px;
+    width: 1090px;
   }
 }
 
@@ -177,9 +177,8 @@ body {
     & img {
       width: 335px;
       height: 335px;
+    }
   }
-  }
-  
 }
 
 .products__list__tittle {
