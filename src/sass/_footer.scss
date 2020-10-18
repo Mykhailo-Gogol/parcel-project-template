@@ -28,6 +28,25 @@
 
 .footer {
   background-color: #fff5f6;
+   
+    @media screen and (max-width: 810px) {
+      background-image: url(../images/made/milkbg480.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+       background-position: top;
+   }
+
+    /*@include for-size(tablet-only) {
+      background-position: top;
+      background-size: contain;
+    }*/
+    
+   @media screen and (min-width: 811px) {
+   background-image: url(../images/made/milkbg1200.png);
+   background-position: center top;
+   background-size: cover;
+  }
+
 }
 
 .footer-container {
