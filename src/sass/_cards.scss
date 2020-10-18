@@ -1,4 +1,3 @@
-
 .list {
   padding: 0;
   margin: 0;
@@ -65,13 +64,6 @@
     left: 0;
     transform: translateY(-84px) translateX(50px);
 
-    // @include for-size(mobile) {
-    //   margin-top: -86px;
-    // }
-    // @include for-size(tablet) {
-    //   margin-top: -78px;
-    // }
-
     @media screen and (min-width: 768px) {
       position: absolute;
       top: 0;
@@ -99,9 +91,6 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     background-color: #ffffff;
-    // display: block;
-    // margin-left: auto;
-    // margin-right: auto;
 
     @media screen and (min-width: 768px) {
       width: calc((100% - 2 * 20px) / 3);
@@ -212,7 +201,7 @@
   }
 
   &__text,
-  &__tel {
+  &__contacts {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
