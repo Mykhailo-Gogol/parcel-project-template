@@ -34,19 +34,23 @@
       background-size: contain;
       background-repeat: no-repeat;
        background-position: top;
+        @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/made/milkbg480x2.png);
+      }
    }
-
-    /*@include for-size(tablet-only) {
-      background-position: top;
-      background-size: contain;
-    }*/
     
    @media screen and (min-width: 811px) {
    background-image: url(../images/made/milkbg1200.png);
    background-position: center top;
    background-size: cover;
+     @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/made/milkbg480x2.png);
+      }
   }
-
 }
 
 .footer-container {
