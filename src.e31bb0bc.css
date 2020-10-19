@@ -594,7 +594,6 @@ summary {
 
 .hero-container {
   padding-top: 193px;
-  padding-bottom: 169px;
 }
 @media (min-width: 768px) {
   .hero-container {
@@ -613,8 +612,8 @@ summary {
 }
 @media (min-width: 1090px) {
   .hero-container {
-    padding-top: 158px;
-    padding-bottom: 34px;
+    padding-top: 138px;
+    padding-bottom: 54px;
     background-image: url("/ice-cream.9cb4e14d.png"), url("/so-tasty.04118518.png"), url("/Pink-Ellipse.9f4a6f43.svg"), url("/milk.e65f588e.png");
     background-size: 236px, 293px, 538px, 188px;
     background-position: right 373px bottom 0, right 20px bottom 0, right 184px bottom 73px, left 0 bottom 45px;
