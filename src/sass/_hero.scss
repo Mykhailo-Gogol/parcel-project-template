@@ -71,7 +71,6 @@
 
 .hero-container {
   padding-top: 193px;
-  padding-bottom: 169px;
   @include for-size(tablet) {
     padding-top: 95px;
     padding-bottom: 31px;
@@ -94,8 +93,8 @@
     }
   }
   @include for-size(desktop) {
-    padding-top: 158px;
-    padding-bottom: 34px;
+    padding-top: 138px;
+    padding-bottom: 54px;
     background-image: url('../images/hero/desktop/ice-cream.png'),
       url('../images/hero/desktop/so-tasty.png'),
       url('../images/hero/Pink-Ellipse.svg'),
