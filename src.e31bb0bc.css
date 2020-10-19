@@ -560,67 +560,68 @@ summary {
 }
 
 .hero {
-  padding-top: 193px;
-  padding-bottom: 169px;
   background-color: #ffb8ca;
-}
-@media (min-width: 768px) {
-  .hero {
-    padding-top: 95px;
-    padding-bottom: 31px;
-  }
-}
-@media (min-width: 1090px) {
-  .hero {
-    padding-top: 156px;
-    padding-bottom: 56px;
-  }
-}
-
-.overlay {
   max-width: 768px;
   height: 502px;
-  background-image: url("/ice-cream.dbf94514.png"), url("/Pink-Ellipse.9f4a6f43.svg");
-  background-repeat: no-repeat;
-  background-size: 171px, 346px;
-  background-position: right 32px bottom 0, right -62px bottom 75px;
+  margin-right: auto;
+  margin-left: auto;
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .overlay {
+@media (max-width: 767px) {
+  .hero {
+    background-image: url("/ice-cream.dbf94514.png"), url("/Pink-Ellipse.9f4a6f43.svg");
+    background-repeat: no-repeat;
+    background-size: 171px, 346px;
+    background-position: right 32px bottom 0, right -62px bottom 75px;
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
     background-image: url("/ice-cream@2x.d31f7def.png"), url("/Pink-Ellipse.9f4a6f43.svg");
   }
 }
 @media (min-width: 768px) {
-  .overlay {
+  .hero {
     max-width: 1090px;
     height: 399px;
+  }
+}
+@media (min-width: 1090px) {
+  .hero {
+    max-width: 1600px;
+    height: 665px;
+  }
+}
+
+.hero-container {
+  padding-top: 193px;
+  padding-bottom: 169px;
+}
+@media (min-width: 768px) {
+  .hero-container {
     padding-top: 95px;
     padding-bottom: 31px;
-    margin-right: auto;
-    margin-left: auto;
     background-image: url("/ice-cream.94078148.png"), url("/so-tasty.2a81afcf.png"), url("/Pink-Ellipse.9f4a6f43.svg"), url("/milk.7a2abee1.png");
+    background-repeat: no-repeat;
     background-size: 143px, 168px, 324px, 124px;
-    background-position: right 248px bottom 0, right 35px bottom 0, right 138px top 34px, left 33px bottom 25px;
+    background-position: right 233px bottom 0, right 20px bottom 0, right 123px top 34px, left 20px bottom 25px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .overlay {
+  .hero-container {
     background-image: url("/ice-cream@2x.bb05b763.png"), url("/so-tasty@2x.dd0e0057.png"), url("/Pink-Ellipse.9f4a6f43.svg"), url("/milk@2x.4eb707dd.png");
   }
 }
 @media (min-width: 1090px) {
-  .overlay {
-    max-width: 1600px;
-    height: 665px;
-    padding-top: 156px;
-    padding-bottom: 56px;
+  .hero-container {
+    padding-top: 158px;
+    padding-bottom: 34px;
     background-image: url("/ice-cream.9cb4e14d.png"), url("/so-tasty.04118518.png"), url("/Pink-Ellipse.9f4a6f43.svg"), url("/milk.e65f588e.png");
     background-size: 236px, 293px, 538px, 188px;
-    background-position: right 450px bottom 0, right 109px bottom 0, right 267px bottom 75px, left 77px bottom 25px;
+    background-position: right 373px bottom 0, right 20px bottom 0, right 184px bottom 73px, left 0 bottom 45px;
   }
 }
 @media screen and (min-width: 1090px) and (min-device-pixel-ratio: 2), screen and (min-width: 1090px) and (min-resolution: 192dpi), screen and (min-width: 1090px) and (min-resolution: 2dppx) {
-  .overlay {
+  .hero-container {
     background-image: url("/ice-cream@2x.4afbff13.png"), url("/so-tasty@2x.784dd80e.png"), url("/Pink-Ellipse.9f4a6f43.svg"), url("/milk@2x.8cf3af82.png");
   }
 }
@@ -1121,15 +1122,12 @@ body {
   padding-top: 125px;
   padding-bottom: 145px;
   background: #FFF5F6;
+  background-image: url("/milkbg480.57bffbf9.png");
+  background-position: center top 766px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-@media (min-width: 320px) {
-  .made__section {
-    background-image: url("/milkbg480.57bffbf9.png");
-    background-position: center top 766px;
-    background-repeat: no-repeat;
-  }
-}
-@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .made__section {
     background-image: url("/milkbg480x2.4e73f13c.png");
   }
@@ -1137,6 +1135,7 @@ body {
 @media (min-width: 768px) {
   .made__section {
     padding-bottom: 246px;
+    background-image: none;
   }
 }
 @media (min-width: 1090px) {
@@ -1144,7 +1143,6 @@ body {
     padding-bottom: 310px;
     background-image: url("/milkbg1200.e2915be4.png");
     background-position: center top 345px;
-    background-repeat: no-repeat;
   }
 }
 @media screen and (min-width: 1090px) and (min-device-pixel-ratio: 2), screen and (min-width: 1090px) and (min-resolution: 192dpi), screen and (min-width: 1090px) and (min-resolution: 2dppx) {
@@ -1790,7 +1788,7 @@ body {
     margin-bottom: 10px;
   }
 }
-.cards__text, .cards__tel {
+.cards__text, .cards__contacts {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1800,13 +1798,13 @@ body {
   margin: 0;
 }
 @media (min-width: 768px) {
-  .cards__text, .cards__tel {
+  .cards__text, .cards__contacts {
     font-size: 14px;
     line-height: 166%;
   }
 }
 @media (min-width: 1090px) {
-  .cards__text, .cards__tel {
+  .cards__text, .cards__contacts {
     font-size: 16px;
     line-height: 183%;
   }
@@ -1882,15 +1880,9 @@ body {
   margin-left: 9px;
   transition: fill 250ms linear;
 }
-.cards__icon:hover, .cards__icon:focus {
-  fill: #d41443;
-}
 .cards__icon--franchise {
   fill: #d41443;
   transition: fill 250ms linear;
-}
-.cards__icon--franchise:hover, .cards__icon--franchise:focus {
-  fill: #ffffff;
 }
 @media (min-width: 768px) {
   .cards__buttons {
@@ -1915,12 +1907,10 @@ body {
   padding-top: 12px;
   padding-bottom: 14px;
   color: #ffffff;
-  transition: background-color 500ms linear;
-  transition: color 250ms linear;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cards__button:hover, .cards__button:focus {
-  color: #d41342;
-  background-color: #ffffff;
+  background-color: #c7133e;
 }
 @media (min-width: 768px) {
   .cards__button {
@@ -1943,12 +1933,9 @@ body {
   padding-right: 35px;
   padding-top: 12px;
   padding-bottom: 14px;
-  transition: background-color 500ms linear;
-  transition: color 250ms linear;
 }
 .cards__buttom--franchise:hover, .cards__buttom--franchise:focus {
-  color: #ffffff;
-  background-color: #d41342;
+  background-color: #ECEBEB;
 }
 @media (min-width: 768px) {
   .cards__buttom--franchise {
@@ -1966,6 +1953,31 @@ body {
 
 .footer {
   background-color: #fff5f6;
+}
+@media screen and (max-width: 810px) {
+  .footer {
+    background-image: url(/milkbg480.57bffbf9.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+}
+@media screen and (max-width: 810px) and (min-device-pixel-ratio: 2), screen and (max-width: 810px) and (min-resolution: 192dpi), screen and (max-width: 810px) and (min-resolution: 2dppx) {
+  .footer {
+    background-image: url(/milkbg480x2.4e73f13c.png);
+  }
+}
+@media screen and (min-width: 811px) {
+  .footer {
+    background-image: url(/milkbg1200.e2915be4.png);
+    background-position: center top;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 811px) and (min-device-pixel-ratio: 2), screen and (min-width: 811px) and (min-resolution: 192dpi), screen and (min-width: 811px) and (min-resolution: 2dppx) {
+  .footer {
+    background-image: url(/milkbg480x2.4e73f13c.png);
+  }
 }
 
 .footer-container {
