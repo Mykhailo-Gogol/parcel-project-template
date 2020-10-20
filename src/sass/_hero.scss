@@ -41,7 +41,7 @@
 .hero {
   background-color: #ffb8ca;
   max-width: 768px;
-  height: 502px;
+  min-height: 502px;
   margin-right: auto;
   margin-left: auto;
   @include for-size(mobile-only) {
@@ -60,12 +60,12 @@
 
   @include for-size(tablet) {
     max-width: 1090px;
-    height: 399px;
+    min-height: 399px;
   }
 
   @include for-size(desktop) {
     max-width: 1600px;
-    height: 665px;
+    min-height: 665px;
   }
 }
 
